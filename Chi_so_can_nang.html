@@ -9,8 +9,11 @@
     let weight = +prompt("Nhap can nang: ");
     let height = (+prompt("Nhap chieu cao: "));
     console.log(height)
-    let BMI = (weight / (height * height));
-    console.log(BMI)
+    let bmi = (weight / (height * height));
+    // hàm mũ trong js là Math.pow(a,b) vdu a mũ b or a ** b cũng tính luỹ thưừa
+    // Math.cbrt: căn bậc 3; Math.sqrt: căn bậc 2; Math.PI: số pi
+    // tất cả dwx liệu nhập từ bàn phím đều là string
+    console.log(bmi)
     document.write("Chi so BMI la: ") + BMI + "<br>"
     if (BMI < 18.5) {
         document.write("Underweight");
